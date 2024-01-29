@@ -15,57 +15,77 @@
         }
 
         .card {
-            border: 1px solid lightgray;
-            border-radius: 5px;
+            border: 2px solid lightgray;
             width: 300px;
             height: 300px;
             cursor: pointer;
             font-size: 30px;
             font-weight: 700;
+            transition: all 0.3s;
         }
 
-        .card > img {
-            width: 100%;
+        .card-img {
             height: 250px;
-            object-fit: cover;
+            background-size: cover;
+        }
+
+        .card-container > a:nth-child(1) > .card > .card-img {
+            background-image: url("../../assets/images/doc/maltese.jpg");
+        }
+
+        .card-container > a:nth-child(2) > .card > .card-img {
+            background-image: url("../../assets/images/doc/bichon_frise.jpg");
+        }
+
+        .card-container > a:nth-child(3) > .card > .card-img {
+            background-image: url("../../assets/images/doc/golden_retriever.webp");
         }
 
         .card-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
             font-size: 20px;
         }
+
+        .card:hover {
+            box-shadow: 1px 1px 20px 1px gray;
+            filter: brightness(90%);
+        }
     </style>
-    <title>강아지 사전</title>
+    <title>민아의 강아지 사전</title>
 </head>
 <body>
 <div>
     <nav>
         <div>
-            <img src="../../assets/images/logo.png" width="60">
+            <img src="../../assets/images/common/logo.png" width="60">
             <a href="../../index.html" class="my-button">홈</a>
         </div>
     </nav>
     <div style="height: 80px"></div>
     <div class="content">
-        <h1 style="padding: 2rem 0">강아지 사전</h1>
+        <h1 style="padding: 4rem 0">강아지 사전</h1>
         <div class="card-container">
-            <article class="card">
-                <img src="../../assets/images/sm.png" alt="sm-dog"/>
-                <div class="card-content">
-                    소형견
-                </div>
-            </article>
-            <article class="card">
-                <img src="../../assets/images/md.png" alt="md-dog"/>
-                <div class="card-content">
-                    중형견
-                </div>
-            </article>
-            <article class="card">
-                <img src="../../assets/images/lg.jpg" alt="lg-dog"/>
-                <div class="card-content">
-                    대형견
-                </div>
-            </article>
+            <a href="./list/maltese.html">
+                <article class="card">
+                    <div class="card-img"></div>
+                    <div class="card-content">말티즈</div>
+                </article>
+            </a>
+            <a href="./list/bichon_frise.html">
+                <article class="card">
+                    <div class="card-img"></div>
+                    <div class="card-content">비숑 프리제</div>
+                </article>
+            </a>
+            <a href="./list/golden_reiriever.html">
+                <article class="card">
+                    <div class="card-img"></div>
+                    <div class="card-content">골든 리트리버</div>
+                </article>
+            </a>
         </div>
     </div>
 </div>

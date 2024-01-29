@@ -2,9 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="../../../assets/css/global.css" rel="stylesheet">
+    <style>
+        .doc-content-container {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            padding: 2rem;
+        }
+
+        .doc-content-container > div:nth-child(1) {
+            width: 40%;
+        }
+
+        .doc-content-container > p:nth-child(2) {
+            width: 60%;
+        }
+
+        .doc-content-container > div:nth-child(1) img {
+            width: 100%;
+        }
+
+        .doc-title-container {
+            padding: 4rem 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .doc-title-container a {
+            border: none;
+        }
+
+        .doc-title-container a:hover {
+            filter: brightness(100%);
+        }
+    </style>
     <title>Maltese</title>
 </head>
 <body>
+<nav>
+    <div>
+        <img src="../../../assets/images/common/logo.png" width="60">
+        <a href="../../../index.html" class="my-button">홈</a>
+    </div>
+</nav>
+<div style="height: 80px"></div>
+<div class="content">
+    <div class="doc-title-container">
+        <h1>말티즈</h1>
+        <a  href="../index.html" class="my-button">사전</a>
+    </div>
+    <div class="doc-content-container">
+        <div>
+            <img src="../../../assets/images/doc/maltese.jpg" alt="maltese">
+        </div>
+        <p>
+            <strong>말티즈(이탈리아어: Maltese)</strong> 혹은 몰티즈는 개 품종 중 하나이다.<br/><br/>
 
+            '몰티즈'란 이름은 이 개가 지중해의 몰타(이탈리아어: Malta) 섬이 원산지여서 붙여졌다는게 정설이지만,
+            지중해의 멜리타 지역에서 유래되었다고 주장하는 학자들도 있다.
+            몸무게는 2~3kg이 평균이지만 큰 종의 경우 5kg까지 된다.<br/><br/>
+
+            온몸이 순백색의 길고 부드러운 명주실 같은 털로 덮인 매우 아름다운 개로, 새까만 코끝과 어두운 색의 눈이 순백색의 털이 돋보인다.
+            지중해의 몰타섬이 원산이라고 하여 이 이름이 붙여졌으나, 사실의 기록이나 전승은 전혀 없고 기원도 뚜렷하지 않다.<br/><br/>
+
+            몰티즈의 원산지가 이탈리아라는 의견도 있다. 1800년 무렵에는 유럽 전역과 미국에 널리 알려졌으며, 아름다운 모습과 온화하고 높은 지능을 지녀 애완용으로 널리 사육되었다.<br/>
+            평균 수명은 15년 정도로 알려져 있다.
+        </p>
+    </div>
+</div>
 </body>
 </html>
